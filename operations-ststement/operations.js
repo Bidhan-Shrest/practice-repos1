@@ -28,6 +28,6 @@ else {
 if (first<second || second>5){
     alert("milyo")
 }
-else{
+else{ 
     alert("milena")
-}
+} 
