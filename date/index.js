@@ -13,7 +13,7 @@ console.log("hello from date");
 const date =new Date(prompt("year, month, day")) ;
 
 
-    console.log(date.toDateString());
+    alert(date.toDateString());
 
 
 
