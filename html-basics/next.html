@@ -34,42 +34,46 @@
           </div>
         </div>
         </div> -->
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        
+            <form onsubmit="return false;">
+                <div class="col-6">
             <div class="col">
-            <div id="fullname" class="card">
+            <div id="fullname" class="card row">
 <label>what is your name</label><br/>
 <input type="text"/>
         </div>
     </div>
-    <div class="col">
-        <div id="password" class="card">
+    <div class="row">
+        <div  class="card">
             <label>password</label><br/>
-            <input type="password"/>    
+            <input type="password" id="password"/>    
         </div>
     </div>
     
-    <div class="col">
-        <div id="college" class="card">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               what is your college name?
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">D.A.V</a></li>
-                <li><a class="dropdown-item" href="#">United</a></li>
-                <li><a class="dropdown-item" href="#">Prasadi</a></li>
-              </ul>
+    <div class="row">
+        <div  class="card">
+            <select id="college" class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            
               </div>
             
         </div>
         <div class="col">
-        <div id="about yourself" class="card    ">
+        <div id="aboutyourself" class="card">
             <span class="input-group-text">Write about yourself.</span>
   <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
     </div>
-    </div>
+</div>  
+</form>
+    
     <div class="d-grid gap-2 col-6 mx-auto">
-    <button type="button" class="btn btn-dark">save</button>
+    <button type="button" class="btn btn-dark" onclick="getFormData(); return false;">save</button>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

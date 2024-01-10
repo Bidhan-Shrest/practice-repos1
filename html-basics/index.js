@@ -1,7 +1,9 @@
 function getFormData() {
-    const fName = document.getElementById("fName").value;
-    const mName = document.getElementById("mName").Value;
-    const lName = document.getElementById("lName").value;
+    const fullname = document.getElementById("fullname").value;
+    const password = document.getElementById("password").value;
+    const college = document.getElementById("college").value;
+    const aboutyourself = document.getElementById("aboutyourself").value;
 
-    console.log({ fName, lName });
+
+    console.log({ fullname, password, college, aboutyourself });
 }
